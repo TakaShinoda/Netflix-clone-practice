@@ -1,4 +1,4 @@
-const API_KEY = process.env.REACT_APP_API_KEY;
+const API_KEY = process.env.REACT_APP_API_KEY
 
 export const requests = {
   feachTrending: `/trending/all/week?api_key=${API_KEY}&language=en-us`,
@@ -9,4 +9,4 @@ export const requests = {
   feactHorrorMovies: `/discover/tv?api_key=${API_KEY}&with_genres=27`,
   feactRomanceMovies: `/discover/tv?api_key=${API_KEY}&with_genres=10749`,
   feactDocumentMovies: `/discover/tv?api_key=${API_KEY}&with_genres=99`,
-};
+}
