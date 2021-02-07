@@ -58,6 +58,7 @@ module.exports = {
       quotes: ['error', 'single', { avoidEscape: true }],
       'require-yield': 'error',
       "semi": ["error", "never", {"beforeStatementContinuationChars": "never"}],
+      "camelcase": [1, {"properties": "never"}],
       // for react-app-env.d.ts (https://github.com/facebook/create-react-app/issues/6560)
       'spaced-comment': [
         'error',
