@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react' // eslint-disable-line
 import axios from '../axios'
+import './Row.scss'
 
 const baseUrl = 'https://image.tmdb.org/t/p/original'
 
@@ -35,7 +36,7 @@ export const Row = ({ title, fetchUrl, isLargeRow }: Props) => {
 
   return (
     <div className="Row">
-      <h2>{title}</h2>
+      <h2 className="Row-title">{title}</h2>
       <div className="Row-posters">
         {/* ポスターコンテンツ */}
         {movies.map((movie, i) => (
