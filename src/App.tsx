@@ -1,11 +1,13 @@
 import React from 'react' // eslint-disable-line
 import { Row } from './components/Row'
+import { Banner } from './components/Banner'
 import { requests } from './request'
 import './App.css'
 
 export const App = () => {
   return (
     <div className="App">
+      <Banner />
       <Row
         title="NETFLIX ORIGUINALS"
         fetchUrl={requests.feachNetflixOriginals}
@@ -16,7 +18,7 @@ export const App = () => {
       <Row title="Comedy Movies" fetchUrl={requests.feactComedyMovies} />
       <Row title="Horror Movies" fetchUrl={requests.feactHorrorMovies} />
       <Row title="Romance Movies" fetchUrl={requests.feactRomanceMovies} />
-      <Row title="DOcumentaries" fetchUrl={requests.feactDocumentMovies} />
+      <Row title="Documentaries" fetchUrl={requests.feactDocumentMovies} />
     </div>
   )
 }
