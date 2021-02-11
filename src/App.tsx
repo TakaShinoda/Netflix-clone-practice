@@ -1,11 +1,11 @@
-import React from 'react' // eslint-disable-line
+import React, { FC } from 'react' // eslint-disable-line
 import { Nav } from './components/Nav'
 import { Row } from './components/Row'
 import { Banner } from './components/Banner'
 import { requests } from './request'
 import './App.css'
 
-export const App = () => {
+export const App: FC = () => {
   return (
     <div className="App">
       <Nav />
