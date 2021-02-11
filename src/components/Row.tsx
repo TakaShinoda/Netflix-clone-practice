@@ -32,8 +32,6 @@ export const Row = ({ title, fetchUrl, isLargeRow }: Props) => {
     fetchData()
   }, [fetchUrl])
 
-  // console.log(movies)
-
   return (
     <div className="Row">
       <h2 className="Row-title">{title}</h2>

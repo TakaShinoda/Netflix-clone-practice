@@ -29,8 +29,6 @@ export const Banner: FC = () => {
     fetchData()
   }, [])
 
-  console.log(movie)
-
   // descriptionの切り捨てよう関数
   const truncate = (str: any, n: number) => {
     // undefinedを弾く
