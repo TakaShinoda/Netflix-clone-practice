@@ -1,4 +1,5 @@
 import React from 'react' // eslint-disable-line
+import { Nav } from './components/Nav'
 import { Row } from './components/Row'
 import { Banner } from './components/Banner'
 import { requests } from './request'
@@ -7,6 +8,7 @@ import './App.css'
 export const App = () => {
   return (
     <div className="App">
+      <Nav />
       <Banner />
       <Row
         title="NETFLIX ORIGUINALS"
