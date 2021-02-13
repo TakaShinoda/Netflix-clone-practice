@@ -19,7 +19,7 @@ type Movie = {
   backdrop_path: string
 }
 
-export const Row = ({ title, fetchUrl, isLargeRow }: Props) => {
+export const Row = ({ title, fetchUrl, isLargeRow }: Props): JSX.Element => {
   const [movies, setMovies] = useState<Movie[]>([])
 
   useEffect(() => {
